@@ -19,7 +19,8 @@ body {
 
 /* Page frame (old fixed-width web) */
 .page {
-  width: 760px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   border: 0;
 }
@@ -33,14 +34,15 @@ body {
 }
 
 .top-left {
-  flex: 1 1 55%;
+  flex: 1 1 65%;
 }
 
 .top-right {
-  flex: 1 1 45%;
+  flex: 1 1 35%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+  margin-top: -50px;
 }
 
 /* Big "Apple" wordmark (approx. 1999 look) */
@@ -107,12 +109,14 @@ body {
 
 /* Right hero image (make it feel like a product shot) */
 .hero-img {
-  width: 330px;
-  height: 260px;
+  width: 400px;
+  height: 320px;
   object-fit: cover;
   border: 1px solid #cfcfcf;
   border-radius: 22px;
   background: #f2f2f2;
+  margin-top: -20px;
+  transform: translate(-275px, -60px);
 }
 
 /* Timestamp bar */
